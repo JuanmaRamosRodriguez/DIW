@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animaciones básicas</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: aquamarine;
+            border: 2px solid black;
+        }
+
+        .a{
+            animation: color 10ms infinite;
+        }
+        .b{
+            animation: forma1 5s infinite;
+        }
+        .c{
+            animation: forma2 5s infinite;
+        }
+        .d{
+            animation: desplazamiento 5s infinite;
+        }
+        .e{
+            animation:desplazamiento2 5s infinite;
+        }
+        .f{
+            animation: forma3 5s infinite;
+        }
+
+
+        @keyframes color {
+            from{background-color: aquamarine;}
+            to{background-color: black;}
+        }
+        @keyframes forma1 {
+          
+               0% {width: 100px;}
+               50% {width: 500px;}
+               0% {width: 100px;}
+            
+        }
+        @keyframes forma2 {
+            
+            0% {border-radius: 0%;}
+            50% {border-radius: 50%;}
+            0% {border-radius: 0%;}
+                
+        }
+        @keyframes desplazamiento {
+            
+            0% {margin-left: 0px;}
+            50% {margin-left: 400px;}
+            0% {margin-left: 0px;}
+            
+        }
+        @keyframes desplazamiento2 {
+            
+            0% {border-radius: 0%;}
+            35% {border-radius: 50%;}
+            65% {margin-left: 400px;}
+            0% {border-radius: 0%;}
+            0% {margin-left: 0px;}
+
+        }
+        @keyframes forma3 {
+            
+            0% {width: 100px;}
+            0% {height: 100px;}
+            50% {width: 200px;}
+            50% {height: 200px;}
+            0% {width: 100px;}
+            0% {height: 100px;}              
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+    <div class="e"></div>
+    <div class="f"></div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+		<meta charset="utf-8">
+        <title>Animación Avanzada</title>
+        <style>
+html {
+	background-image: url(cielo.png);
+    background-repeat: no-repeat;
+ 
+}
+.wrap {
+	position: relative;
+}
+/* THE BEE   THE BEE   THE BEE   THE BEE    */
+@keyframes dodging1 {
+	0% {
+		top:0;
+	}
+	50% {
+		top:75px;
+	}
+	100% {
+		top:0;
+	}
+}
+.wrap2 {
+	position:absolute;
+	left:20%;
+  margin-top:-150px;
+	animation:
+	dodging1 1s ease-in-out infinite;
+}
+
+@keyframes flutter2 {
+	0% {
+		transform:rotate(80deg);
+	}
+	50% {
+		transform:rotate(100deg);
+	}
+}
+@keyframes flutter1 {
+	0% {
+		transform:rotate(20deg);
+	}
+	50% {
+		transform:rotate(40deg);
+	}
+}
+
+
+.nube{
+    height: 500px;
+    width: 500px;
+    margin-top: 150px;
+    margin-left: 400px;
+    background-image: url(nube.png);
+    background-repeat: no-repeat;
+ 
+}
+
+
+@keyframes cloud {
+	0% {
+		left:-150px;
+	}
+	100% {
+		left:90%;
+	}
+}
+@keyframes cloud2 {
+	0% {
+		left:-150px;
+	}
+	100% {
+		left:90%;
+	}
+}
+.cloud1 {
+	position: absolute;
+	height:30px;
+	width:30px;
+	top:100px;
+	left:-150px;
+	border-radius:100%;
+	box-shadow:
+	50px 50px 2px rgba(255,255,255,0.95),
+	30px 55px 1px rgba(255,255,255,0.95),
+	10px 50px 1px rgba(255,255,255,0.95),
+	20px 35px 1px rgba(255,255,255,0.95),
+	40px 35px 1px rgba(255,255,255,0.95);
+	animation:
+	cloud 10s linear infinite;
+	z-index:-1;
+}
+.cloud2 {
+	position: absolute;
+	height:60px;
+	width:60px;
+	top:0px;
+	left:-950px;
+	border-radius:100%;
+	box-shadow:
+	100px 200px 2px rgba(255,255,255,0.95),
+	50px 205px 1px rgba(255,255,255,0.95),
+	10px 200px 1px rgba(255,255,255,0.95),
+	35px 170px 1px rgba(255,255,255,0.95),
+	70px 170px 1px rgba(255,255,255,0.95);
+	animation:
+	cloud 5s 2s linear infinite;
+	z-index:-1;
+}
+.cloud3 {
+	position: absolute;
+	height:100px;
+	width:100px;
+	top:200px;
+	left:-950px;
+	border-radius:100%;
+	box-shadow:
+	150px 200px 2px rgba(255,255,255,0.95),
+	75px 205px 1px rgba(255,255,255,0.95),
+	10px 200px 1px rgba(255,255,255,0.95),
+	45px 150px 1px rgba(255,255,255,0.95),
+	120px 150px 1px rgba(255,255,255,0.95);
+	animation:
+	cloud2 2.8s 1s linear infinite;
+	z-index:1;
+}
+
+.texto{
+    font-size: 20px;
+    padding-top: 150px;
+    padding-left: 50px;
+    color: orange;
+    animation: texto 2s infinite;
+    font-family: "Gill Sans", sans-serif;
+}
+
+@keyframes texto{
+    0%{
+        color:orange;
+        font-size: 20px;
+    }
+    20%{
+        color:black;
+        font-size: 40px;}
+    50%{
+        color:red;
+        font-size: 40px;}
+    70%{
+        color:yellow;
+        font-size: 20px;}
+    0%{
+        color:orange;
+        font-size: 20px;
+    }
+    
+}
+        </style>
+
+</HEAD>
+	<BODY>
+        <div class="wrap">
+            <div class="wrap2">
+                <div class="nube"></div>
+                </div>
+            </div>
+            <div class="cloud1"></div>
+            <div class="cloud2"></div>
+            <div class="cloud3"></div>
+
+            <div class="texto">DRAGON BALL: El ataque de Penpot</div>
+    
+        </div>
+    </BODY>
+</HTML>
