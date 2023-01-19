@@ -5,7 +5,10 @@ module.exports = {
         fontSize: ['responsive','hover','group-hover'],
         transform: ['responsive','hover','group-hover'],
         scale: ['responsive','hover','group-hover'],
-    }
+        colors:{
+          "azulClaro":'#E0FFFF'
+        },
+    },
   },
 
   content: [ './components//.{html,js}',
@@ -18,5 +21,6 @@ module.exports = {
     },
     extend: {},
   },
+  
   plugins: [],
 }
