@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta http-equiv="X-UA-Conpatible" content="IE-edge" />
     <title>Máster en CSS</title>
     <link rel="icon" type="favicon/x-icon" href="img/supertux.png" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
@@ -12,17 +13,32 @@
 
 <body>
   
-<nav class="bg-black">
-      <div class="container mx-auto px-4">
-        <div class="bebas lg:float-left md:ml-72 w-48 bg-cyan-400	text-center lg:mt-50 cursor-pointer sm:ml-50 hover:border-2 hover:bg-gray-300 hover:text-black">
-          <span class="gear animate-rotateGear WebSymbolRegular">S</span>
-            <h3 class="text-3xl transition-all block float-right mt-1 mr-16">BLOG</h3></div>
-          <div class="flex">
-            <a href="#" class="px-4 py-2 text-white hover:bg-cyan-400 font-bold">INICIO</a>
-            <a href="#" class="px-4 py-2 text-white hover:bg-cyan-400 font-bold">BLOG</a>
-            <a href="#" class="px-4 py-2 text-white hover:bg-cyan-400 font-bold">FORMACIÓN</a>
-            <a href="#" class="px-4 py-2 text-white hover:bg-cyan-400 font-bold" >CONTACTO</a>
-          </div>
-        </div>
+<header id="header" class="w-full h-20 bg-black text-white">
+    <div class="container mx-auto px-4">
+      <div id="logo" class="block group bg-blue transition-all-300ms float-left mt-5 ml-5 text-center hover:rounded-sm hover:bg-black hover:text-white">
+        <span class="group-hover:animate-fromBelow inline-block text-3xl">S</span>
+        <h3 class="text-3xl transition-all block float-right mt-1 mr-16">BLOG</h3></div>
+      </div>
+        <nav id="menu" class="float-right flex-row h-10 bg-transparent mt-8">
+          <ul>
+            <li class="text-2xl leading-5 mr-5 ml-5 inline-block tracking-wider">
+              <a href="#" class="transition-all-200ms block text-white no-underline transform hover:scale-125 hover:text-sky-400 ">INICIO</a>
+            </li>
+            <li class="text-2xl leading-5 mr-5 ml-5 inline-block tracking-wider">
+              <a href="#" class="transition-all-200ms block text-white no-underline transform hover:scale-125 hover:text-sky-400 ">BLOG</a>
+            </li>
+            <li class="text-2xl leading-5 mr-5 ml-5 inline-block tracking-wider">
+              <a href="#" class="transition-all-200ms block text-white no-underline transform hover:scale-125 hover:text-sky-400 ">FORMACIÓN</a>
+           </li>
+           <li class="text-2xl leading-5 mr-5 ml-5 inline-block tracking-wider">
+            <a href="#" class="transition-all-200ms block text-white no-underline transform hover:scale-125 hover:text-sky-400 " >CONTACTO</a>
+           </li>
+          </ul>
+        </nav>
+
+
+        
+      </div>
+   </header>
   </body>
 </html>
