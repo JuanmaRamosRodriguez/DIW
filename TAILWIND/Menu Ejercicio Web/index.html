@@ -3,23 +3,24 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta http-equiv="X-UA-Conpatible" content="IE-edge" />
     <title>Máster en CSS</title>
-    <link rel="icon" type="favicon/x-icon" href="img/supertux.png" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
 </head>
 
 <body>
-  
-<header id="header" class="w-full h-20 bg-black text-white">
-    <div class="container mx-auto px-4">
-      <div id="logo" class="block group bg-blue transition-all-300ms float-left mt-5 ml-5 text-center hover:rounded-sm hover:bg-black hover:text-white">
-        <span class="group-hover:animate-fromBelow inline-block text-3xl">S</span>
-        <h3 class="text-3xl transition-all block float-right mt-1 mr-16">BLOG</h3></div>
-      </div>
-        <nav id="menu" class="float-right flex-row h-10 bg-transparent mt-8">
+  <header id="header" class="w-full h-20 bg-black text-white">
+      <div class="wrap w-11/12 mx-auto">
+        <div id="logo" class="block group bg-sky-400 w-52 transition-all-300ms float-left mt-5 ml-5 text-center hover:rounded-sm hover:bg-gray-400 hover:text-black">
+          <span class="gear animate-spin block float-left text-3xl mt-2 ml-7 group-hover:animate-frombellow">S</span>
+          <h3 class="text-4xl transition-all block float-right mt-1 mr-16">BLOG</h3></div>
+        </div>
+      
+        <!--MENÚ-->
+        
+        <nav id="menu" class="float-right mr-20 h-10 bg-transparent mt-8">
           <ul>
             <li class="text-2xl leading-5 mr-5 ml-5 inline-block tracking-wider">
               <a href="#" class="transition-all-200ms block text-white no-underline transform hover:scale-125 hover:text-sky-400 ">INICIO</a>
@@ -29,16 +30,83 @@
             </li>
             <li class="text-2xl leading-5 mr-5 ml-5 inline-block tracking-wider">
               <a href="#" class="transition-all-200ms block text-white no-underline transform hover:scale-125 hover:text-sky-400 ">FORMACIÓN</a>
-           </li>
-           <li class="text-2xl leading-5 mr-5 ml-5 inline-block tracking-wider">
+          </li>
+          <li class="text-2xl leading-5 mr-5 ml-5 inline-block tracking-wider">
             <a href="#" class="transition-all-200ms block text-white no-underline transform hover:scale-125 hover:text-sky-400 " >CONTACTO</a>
-           </li>
+          </li>
           </ul>
         </nav>
 
+        <!--FIN MENÚ-->
+        </div>
+    </header>
 
-        
-      </div>
-   </header>
+
+    <section class="wrap wrap-content w-11/12 mx-auto">
+      <section id="info">
+
+          <!-- Inicio Banner -->
+          <div id="banner" class="w-11/12 h-24 border-8 border-solid border-white shadow m-5 overflow-hidden animate-backBanner">
+              <h1 class="block w-9/12 text-white text-4xl font-normal tracking-widest m-7 animate-showtext">CURSOS DE DESARROLLO WEB</h1>
+          </div>
+          <!-- Fin Banner -->
+
+           <!--Inicio Tarjetas-->
+           <div id="cards">
+
+            <div class="card card group float-left w-52 h-72 border border-solid border-gray-400 shadow bg-white overflow-hidden m-5 mt-10
+            cursor-pointer transition-all duration-300 hover:bg-black">
+                <p class="icon block w-full h-32 text-5xl leading-loose text-center m-0 transition-all duration-300 group-hover:text-7xl
+                group-hover:text-sky-400 group-hover:animate-showicon">H</p>
+                <h2 class="category w-full h-12 text-xl font-bold text-center text-sky-700 transition-all duration-300 group-hover:text-white 
+                group-hover:animate-showcategory">Desarrollo Web</h2>
+                <p class="description text-center text-sky-700 text-sm transition-all duration-300 group-hover:text-white 
+                group-hover:animate-showdescription">Aprende los principales lenguajes para desarrollar webs ¡Conviertete en un webmaster!
+                </p>
+            </div>
+
+            <div class="card card group float-left w-52 h-72 border border-solid border-gray-400 shadow bg-white overflow-hidden m-5 mt-10
+            cursor-pointer transition-all duration-300 hover:bg-black">
+                <p class="icon block w-full h-32 text-5xl leading-loose text-center m-0 transition-all duration-300 group-hover:text-7xl
+                group-hover:text-sky-400 group-hover:animate-showicon">_</p>
+                <h2 class="category w-full h-12 text-xl font-bold text-center text-sky-700 transition-all duration-300 group-hover:text-white 
+                group-hover:animate-showcategory">Sistemas operativos</h2>
+                <p class="description text-center text-sky-700 text-sm transition-all duration-300 group-hover:text-white 
+                group-hover:animate-showdescription">Aprende a administrar sisteams Linux y Windows</p>
+            </div>
+
+            <div class="card group float-left w-52 h-72 border border-solid border-gray-400 shadow bg-white overflow-hidden m-5 mt-10
+            cursor-pointer transition-all duration-300 hover:bg-black">
+                <p class="icon block w-full h-32 text-5xl leading-loose text-center m-0 transition-all duration-300 group-hover:text-7xl
+                group-hover:text-sky-400 group-hover:animate-showicon">S</p>
+                <h2 class="category w-full h-12 text-xl font-bold text-center text-sky-700 transition-all duration-300 group-hover:text-white 
+                group-hover:animate-showcategory">Hardware</h2>
+                <p class="description text-center text-sky-700 text-sm transition-all duration-300 group-hover:text-white 
+                group-hover:animate-showdescription">Conoce los entresijos del hardware</p>
+            </div>
+
+            <div class="card group float-left w-52 h-72 border border-solid border-gray-400 shadow bg-white overflow-hidden m-5 mt-10
+            cursor-pointer transition-all duration-300 hover:bg-black">
+                <p class="icon block w-full h-32 text-5xl leading-loose text-center m-0 transition-all duration-300 group-hover:text-7xl
+                group-hover:text-sky-400 group-hover:animate-showicon">u</p>
+                <h2 class="category w-full h-12 text-xl font-bold text-center text-sky-700 transition-all duration-300 group-hover:text-white 
+                group-hover:animate-showcategory">Redes e Internet</h2>
+                <p class="description text-center text-sky-700 text-sm transition-all duration-300 group-hover:text-white 
+                group-hover:animate-showdescription">Aprende a configurar y administrar redes informáticas y servidores</p>
+            </div>
+
+            <div class="card group float-left w-52 h-72 border border-solid border-gray-400 shadow bg-white overflow-hidden m-5 mt-10
+            cursor-pointer transition-all duration-300 hover:bg-black">
+                <p class="icon block w-full h-32 text-5xl leading-loose text-center m-0 transition-all duration-300 group-hover:text-7xl
+                group-hover:text-sky-400 group-hover:animate-showicon">a</p>
+                <h2 class="category w-full h-12 text-xl font-bold text-center text-sky-700 transition-all duration-300 group-hover:text-white 
+                group-hover:animate-showcategory">Bases de datos</h2>
+                <p class="description text-center text-sky-700 text-sm transition-all duration-300 group-hover:text-white 
+                group-hover:animate-showdescription">Aprende a montar y administrar base de datos</p>
+            </div>
+
+        </div>
+        <!--Fin Tarjetas-->
+
   </body>
 </html>

@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+    body{
+        background-image: url('../img/pattern.png');
+        
+    }
+    .gear, .icon{
+        font-family: "WebSymbolsRegular"; 
+     }
+    
+}
+
 
 /*FUENTES*/
 @font-face{
@@ -29,15 +40,14 @@
     font-style: normal;
 }
 
+
+
 /*GENERALES*/
+
 
 *{
     margin: 0px;
     padding: 0px;
-}
-
-body{
-    background: url("../img/pattern.png");
 }
 
 .container{
@@ -45,11 +55,28 @@ body{
     margin: 0px auto;
 }
 
-.gear, .icon{
-    font-family: "WebSymbolsRegular"; 
- }
-
  .clearfix{
      float:none;
      clear:both;
  }
+
+ #banner{
+    background: url("../img/bakbaner.png");
+    background-position: -200px -200px;
+}
+
+#banner h1{
+    font-family: 'BebasNeue';
+}
+
+ #header{
+    font-family: "BebasNeue";
+}
+
+.card .description{
+    font-family: "TrebuchetMS";
+}
+
+.card .category{
+    font-family: "TrebuchetMS";
+}
