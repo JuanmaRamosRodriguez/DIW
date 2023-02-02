@@ -860,6 +860,44 @@ body{
   font-family: "TrebuchetMS";
 }
 
+#lateral{
+  font-family: "TrebuchetMS";
+}
+
+#lateral h3{
+  background: url('../img/pxgray.png'), white;
+  font-family: "BebasNeue";
+}
+
+#social .overlay{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -52px;
+  transform: translateX(-80%);
+}
+
+#social div:hover .overlay{
+  transform: translateX(0%);
+}
+
+#articles article{
+  font-family: "TrebuchetMS";
+  height: auto;
+}
+
+#articles h2{
+  background: url('../img/pxgray.png'), white;
+  font-family: "BebasNeue";
+  line-height: 75px;
+}
+
+#login input[type="submit"],
+    #login input[type="button"],
+    #login input[type="reset"],
+    #login button{
+  background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
+  font-family: "TrebuchetMS";
+}
+
 .hover\:scale-125:hover {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
